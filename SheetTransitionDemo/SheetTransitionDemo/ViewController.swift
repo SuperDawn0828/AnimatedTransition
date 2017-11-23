@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let transitionDelegate = TransitionDelegate()
+    let SheetTransitionDelegate = SheetTransitionDelegate()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
     @IBAction func buttonAction(_ sender: UIButton) {
         let presentVC = PresentViewController()
-        presentVC.transitioningDelegate = transitionDelegate
+        presentVC.transitioningDelegate = SheetTransitionDelegate
         presentVC.presentation(presentedViewController: self, animated: true, completion: nil)
     }
     

@@ -19,7 +19,7 @@ class InteractiveTransition: NSObject, UIViewControllerInteractiveTransitioning 
     
     var presentedViewController: UIViewController? = nil {
         didSet {
-            let panGR = UIPanGestureRecognizer.init(target: self, action: #selector(panGestureReconizerAction(_:)))
+            let panGR = UIPanGestureRecognizer(target: self, action: #selector(panGestureReconizerAction(_:)))
             self.presentedViewController?.view.addGestureRecognizer(panGR)
         }
     }

@@ -36,7 +36,7 @@ class MaskAnimatedTransition: NSObject, UIViewControllerAnimatedTransitioning {
         }
     }
     
-    func presentAnimateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+    private func presentAnimateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         let containerView = transitionContext.containerView
         
         guard let toViewController = transitionContext.viewController(forKey: .to) else {
@@ -58,7 +58,7 @@ class MaskAnimatedTransition: NSObject, UIViewControllerAnimatedTransitioning {
         })
     }
     
-    func dismissAnimateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+    private func dismissAnimateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         guard let fromViewController = transitionContext.viewController(forKey: .from) else {
             return
         }

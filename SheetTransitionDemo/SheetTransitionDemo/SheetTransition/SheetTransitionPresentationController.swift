@@ -1,5 +1,5 @@
 //
-//  TransitionPresentationController.swift
+//  SheetTransitionPresentationController.swift
 //  SheetTransitionDemo
 //
 //  Created by 黎明 on 2017/8/14.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TransitionPresentationController: UIPresentationController {
+class SheetTransitionPresentationController: UIPresentationController {
     
     let maskView = UIView()
 

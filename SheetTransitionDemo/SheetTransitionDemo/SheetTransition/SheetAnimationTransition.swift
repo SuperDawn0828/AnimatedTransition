@@ -1,5 +1,5 @@
 //
-//  AnimationTransition.swift
+//  SheetAnimationTransition.swift
 //  SheetTransitionDemo
 //
 //  Created by 黎明 on 2017/8/14.
@@ -8,18 +8,18 @@
 
 import UIKit
 
-class AnimationTransition: NSObject, UIViewControllerAnimatedTransitioning {
+class SheetAnimationTransition: NSObject, UIViewControllerAnimatedTransitioning {
     
-    enum AnimationTransitionModalType {
+    enum SheetAnimationTransitionModalType {
         
         case present
         
         case dismiss
     }
     
-    var modalType: AnimationTransitionModalType
+    var modalType: SheetAnimationTransitionModalType
     
-    init(_ modalType: AnimationTransitionModalType) {
+    init(_ modalType: SheetAnimationTransitionModalType) {
         self.modalType = modalType
         super.init()
     }

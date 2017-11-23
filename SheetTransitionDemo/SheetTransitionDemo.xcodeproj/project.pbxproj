@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2CD9D651FB543B900566045 /* SheetAnimationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CD9D621FB543B900566045 /* SheetAnimationTransition.swift */; };
+		E2CD9D661FB543B900566045 /* SheetTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CD9D631FB543B900566045 /* SheetTransitionDelegate.swift */; };
+		E2CD9D671FB543B900566045 /* SheetTransitionPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CD9D641FB543B900566045 /* SheetTransitionPresentationController.swift */; };
 		E2D660DE1F4152AD0060DC4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D660DD1F4152AD0060DC4C /* AppDelegate.swift */; };
 		E2D660E01F4152AD0060DC4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D660DF1F4152AD0060DC4C /* ViewController.swift */; };
 		E2D660E31F4152AD0060DC4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D660E11F4152AD0060DC4C /* Main.storyboard */; };
@@ -14,9 +17,6 @@
 		E2D660E81F4152AD0060DC4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D660E61F4152AD0060DC4C /* LaunchScreen.storyboard */; };
 		E2D660F31F4152AD0060DC4C /* SheetTransitionDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D660F21F4152AD0060DC4C /* SheetTransitionDemoTests.swift */; };
 		E2D660FE1F4152AD0060DC4C /* SheetTransitionDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D660FD1F4152AD0060DC4C /* SheetTransitionDemoUITests.swift */; };
-		E2D6610D1F4153330060DC4C /* TransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6610C1F4153330060DC4C /* TransitionDelegate.swift */; };
-		E2D6610F1F4153480060DC4C /* AnimationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6610E1F4153480060DC4C /* AnimationTransition.swift */; };
-		E2D661111F41537A0060DC4C /* TransitionPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D661101F41537A0060DC4C /* TransitionPresentationController.swift */; };
 		E2D661131F4172C20060DC4C /* PresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D661121F4172C20060DC4C /* PresentViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E2CD9D621FB543B900566045 /* SheetAnimationTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetAnimationTransition.swift; sourceTree = "<group>"; };
+		E2CD9D631FB543B900566045 /* SheetTransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetTransitionDelegate.swift; sourceTree = "<group>"; };
+		E2CD9D641FB543B900566045 /* SheetTransitionPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetTransitionPresentationController.swift; sourceTree = "<group>"; };
 		E2D660DA1F4152AD0060DC4C /* SheetTransitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SheetTransitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D660DD1F4152AD0060DC4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2D660DF1F4152AD0060DC4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,9 +54,6 @@
 		E2D660F91F4152AD0060DC4C /* SheetTransitionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SheetTransitionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D660FD1F4152AD0060DC4C /* SheetTransitionDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetTransitionDemoUITests.swift; sourceTree = "<group>"; };
 		E2D660FF1F4152AD0060DC4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2D6610C1F4153330060DC4C /* TransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionDelegate.swift; sourceTree = "<group>"; };
-		E2D6610E1F4153480060DC4C /* AnimationTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationTransition.swift; sourceTree = "<group>"; };
-		E2D661101F41537A0060DC4C /* TransitionPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionPresentationController.swift; sourceTree = "<group>"; };
 		E2D661121F4172C20060DC4C /* PresentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +82,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E2CD9D611FB543B900566045 /* SheetTransition */ = {
+			isa = PBXGroup;
+			children = (
+				E2CD9D621FB543B900566045 /* SheetAnimationTransition.swift */,
+				E2CD9D631FB543B900566045 /* SheetTransitionDelegate.swift */,
+				E2CD9D641FB543B900566045 /* SheetTransitionPresentationController.swift */,
+			);
+			path = SheetTransition;
+			sourceTree = "<group>";
+		};
 		E2D660D11F4152AD0060DC4C = {
 			isa = PBXGroup;
 			children = (
@@ -105,7 +115,7 @@
 		E2D660DC1F4152AD0060DC4C /* SheetTransitionDemo */ = {
 			isa = PBXGroup;
 			children = (
-				E2D6610B1F41530A0060DC4C /* Transition */,
+				E2CD9D611FB543B900566045 /* SheetTransition */,
 				E2D660DD1F4152AD0060DC4C /* AppDelegate.swift */,
 				E2D660DF1F4152AD0060DC4C /* ViewController.swift */,
 				E2D661121F4172C20060DC4C /* PresentViewController.swift */,
@@ -133,16 +143,6 @@
 				E2D660FF1F4152AD0060DC4C /* Info.plist */,
 			);
 			path = SheetTransitionDemoUITests;
-			sourceTree = "<group>";
-		};
-		E2D6610B1F41530A0060DC4C /* Transition */ = {
-			isa = PBXGroup;
-			children = (
-				E2D6610C1F4153330060DC4C /* TransitionDelegate.swift */,
-				E2D6610E1F4153480060DC4C /* AnimationTransition.swift */,
-				E2D661101F41537A0060DC4C /* TransitionPresentationController.swift */,
-			);
-			path = Transition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,12 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2D6610D1F4153330060DC4C /* TransitionDelegate.swift in Sources */,
-				E2D661111F41537A0060DC4C /* TransitionPresentationController.swift in Sources */,
 				E2D661131F4172C20060DC4C /* PresentViewController.swift in Sources */,
+				E2CD9D661FB543B900566045 /* SheetTransitionDelegate.swift in Sources */,
+				E2CD9D671FB543B900566045 /* SheetTransitionPresentationController.swift in Sources */,
 				E2D660E01F4152AD0060DC4C /* ViewController.swift in Sources */,
 				E2D660DE1F4152AD0060DC4C /* AppDelegate.swift in Sources */,
-				E2D6610F1F4153480060DC4C /* AnimationTransition.swift in Sources */,
+				E2CD9D651FB543B900566045 /* SheetAnimationTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +531,7 @@
 				E2D661041F4152AD0060DC4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2D661051F4152AD0060DC4C /* Build configuration list for PBXNativeTarget "SheetTransitionDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +540,7 @@
 				E2D661071F4152AD0060DC4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2D661081F4152AD0060DC4C /* Build configuration list for PBXNativeTarget "SheetTransitionDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +549,7 @@
 				E2D6610A1F4152AD0060DC4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
